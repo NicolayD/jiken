@@ -27,6 +27,7 @@ iex> Jiken.Dummy()
 :ok 
 
 iex> Jiken.set(Jiken.Dummy, :greet, fn -> IO.puts("Hello, simulation!") end)
+
 iex> Jiken.Dummy()
 Hello, simulation!
 :ok
