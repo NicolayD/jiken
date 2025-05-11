@@ -1,7 +1,6 @@
 # Jiken
 
-This library allows developers to simulate failures in their Mix applications. Different functions are configured to fail with specific errors,
-and revert to their normal operation after.
+This library allows developers to simulate failures in their Mix applications. Different functions are configured to fail with specific errors, and revert to their normal operation after.
 
 It is intended to be used in development, but eventually the goal is to support staging usage as well.
 
@@ -13,7 +12,7 @@ by adding `jiken` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:jiken, "~> 0.1.0", only: [:dev]}
+    {:jiken, "~> 0.0.1", only: [:dev]}
   ]
 end
 ```
