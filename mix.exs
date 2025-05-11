@@ -37,13 +37,9 @@ defmodule Jiken.MixProject do
 
   defp description() do
     """
-    `Jiken` allows developers to simulate failures in their Mix applications in development. 
-
-    Different functions can be configured to fail with specific errors, and revert to their normal operation after.
-
-    The main aim of `Jiken` is to be able to test critical interfaces with breaking scenarios.
-
-    It is intended to be used in development, but eventually the goal is to support staging usage as well.
+    `Jiken` allows developers to do simulation testing in their Mix applications in development. 
+    
+    The main aim is to be able to test critical interfaces with breaking scenarios.
     """
   end
 
