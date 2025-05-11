@@ -37,7 +37,7 @@ defmodule Jiken.MixProject do
 
   defp description() do
     """
-    `Jiken` allows developers to do simulation testing in their Mix applications in development. 
+    Jiken allows developers to do simulation testing in their Mix applications in development. 
     
     The main aim is to be able to test critical interfaces with breaking scenarios.
     """
