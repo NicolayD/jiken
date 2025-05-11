@@ -19,13 +19,39 @@ end
 
 ## Usage
 
-**TODO
+This is how a function can be dynamically mocked with `Jiken`.
+
+```elixir
+iex> Jiken.Dummy()
+"Hello, world!"
+:ok 
+
+iex> Jiken.set(Jiken.Dummy, :greet, fn -> IO.puts("Hello, simulation!") end)
+iex> Jiken.Dummy()
+Hello, simulation!
+:ok
+
+iex> Jiken.reset(Jiken.Dummy)
+:ok
+
+iex> Jiken.Dummy()
+Hello, world!
+:ok
+```
 
 ## Roadmap
+- [ ] Simulation configuration:
+  - [ ] In a `.jiken.exs` file define which functions to be mocked
+  - [ ] Support different mocking strategies:
+    - [ ] Mock after a specific number of reductions (function calls)
+    - [ ] Mock at or after a specific time
+    - [ ] Specify when to unmock
 - [ ] Pull exceptions from production and simulate them locally:
   - [ ] from AppSignal
   - [ ] from Sentry
+  - [ ] from Datadog
 - [ ] Collect metrics for simulated exceptions
+- [ ] Support telemetry
 - [ ] Support more tailored usage in staging
 - [ ] Support for coordination across distributed nodes
 
