@@ -6,8 +6,8 @@ It is intended to be used in development, but eventually the goal is to support 
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `jiken` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `jiken` to your list of dependencies in `mix.exs`:
+Make sure to include it only in the `:dev` environment.
 
 ```elixir
 def deps do
