@@ -50,8 +50,8 @@ defmodule Jiken do
   defdelegate set(module, function_name, new_implementation, opts \\ []), to: Mock
   defdelegate reset(module), to: Unmock
 
-  @mocked_modules_table :jiken_mocked_modules
-  @original_modules_table :jiken_original_modules
+  @mocked_modules_table __MODULE__.Mocks
+  @original_modules_table __MODULE__.Originals
 
   def init do
     :ets.new(@mocked_modules_table, [:set, :public, :named_table])
